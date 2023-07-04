@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  badwords = ['idiot', 'badword2', 'badword3'];
+  badwords = ['idiot', 'Gandalf', 'Bilbo'];
 
   applyBadwordFilter(text: string): string {
     for (const badword of this.badwords) {
